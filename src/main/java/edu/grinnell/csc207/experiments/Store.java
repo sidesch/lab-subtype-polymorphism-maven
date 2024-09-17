@@ -4,6 +4,7 @@ import edu.grinnell.csc207.store.Item;
 import edu.grinnell.csc207.store.BulkItem;
 import edu.grinnell.csc207.store.Purchase;
 import edu.grinnell.csc207.store.StoreUtils;
+import edu.grinnell.csc207.store.Multiple;
 
 import java.io.PrintWriter;
 
@@ -26,6 +27,10 @@ public class Store {
         new Purchase[] {
           new Item("hammer", "hits things", 899),
           new Item("penny candy", "imaginary", 1),
+          new Item("mints", "refreshing and minty", 299),
+          new BulkItem("saffron", "yellow", "gram", 1111, 2),
+          new Multiple("nail", "nails", 2, 63)
+
         });
     pen.close();
   } // main(String[])
